@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24F0627F21211A43003B94C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F0627D21211A43003B94C1 /* Main.storyboard */; };
+		24F0628121211A43003B94C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F0628021211A43003B94C1 /* Assets.xcassets */; };
+		24F0628421211A43003B94C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F0628221211A43003B94C1 /* LaunchScreen.storyboard */; };
+		24F0628721211A43003B94C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F0628621211A43003B94C1 /* main.m */; };
+		24F062A82121206E003B94C1 /* Dish.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F0629D2121206E003B94C1 /* Dish.m */; };
+		24F062A92121206E003B94C1 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F0629F2121206E003B94C1 /* Dog.m */; };
+		24F062AA2121206E003B94C1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F062A12121206E003B94C1 /* Person.m */; };
+		24F062AC2121206E003B94C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F062A72121206E003B94C1 /* AppDelegate.m */; };
+		24F062B72121217C003B94C1 /* PersonEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F062B32121217C003B94C1 /* PersonEditViewController.m */; };
+		24F062B82121217C003B94C1 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F062B52121217C003B94C1 /* PersonViewController.m */; };
+		24F062BE21212202003B94C1 /* PersonNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F062BD21212202003B94C1 /* PersonNewViewController.m */; };
+		24F062C121212B16003B94C1 /* DogNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F062C021212B16003B94C1 /* DogNewViewController.m */; };
+		24F062C4212134B7003B94C1 /* DogEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F062C3212134B7003B94C1 /* DogEditViewController.m */; };
+		24F062C721213673003B94C1 /* DishNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F062C621213673003B94C1 /* DishNewViewController.m */; };
+		D3C8BA203085023A99D30792 /* Pods_RealmSyncDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7D2A6260169D49081504C2 /* Pods_RealmSyncDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24F0627421211A43003B94C1 /* RealmSyncDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmSyncDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F0627E21211A43003B94C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24F0628021211A43003B94C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24F0628321211A43003B94C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24F0628521211A43003B94C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F0628621211A43003B94C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24F0629421211B11003B94C1 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F0629C2121206E003B94C1 /* Dish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dish.h; sourceTree = "<group>"; };
+		24F0629D2121206E003B94C1 /* Dish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dish.m; sourceTree = "<group>"; };
+		24F0629E2121206E003B94C1 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		24F0629F2121206E003B94C1 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		24F062A02121206E003B94C1 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		24F062A12121206E003B94C1 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		24F062A62121206E003B94C1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24F062A72121206E003B94C1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24F062B22121217C003B94C1 /* PersonEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonEditViewController.h; sourceTree = "<group>"; };
+		24F062B32121217C003B94C1 /* PersonEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonEditViewController.m; sourceTree = "<group>"; };
+		24F062B42121217C003B94C1 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		24F062B52121217C003B94C1 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		24F062BC21212202003B94C1 /* PersonNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonNewViewController.h; sourceTree = "<group>"; };
+		24F062BD21212202003B94C1 /* PersonNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonNewViewController.m; sourceTree = "<group>"; };
+		24F062BF21212B16003B94C1 /* DogNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogNewViewController.h; sourceTree = "<group>"; };
+		24F062C021212B16003B94C1 /* DogNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogNewViewController.m; sourceTree = "<group>"; };
+		24F062C2212134B7003B94C1 /* DogEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogEditViewController.h; sourceTree = "<group>"; };
+		24F062C3212134B7003B94C1 /* DogEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogEditViewController.m; sourceTree = "<group>"; };
+		24F062C521213673003B94C1 /* DishNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DishNewViewController.h; sourceTree = "<group>"; };
+		24F062C621213673003B94C1 /* DishNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DishNewViewController.m; sourceTree = "<group>"; };
+		6228F3A2092676145D4187A6 /* Pods-RealmSyncDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSyncDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmSyncDemo/Pods-RealmSyncDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		92C7C918F746A927785E0881 /* Pods-RealmSyncDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSyncDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmSyncDemo/Pods-RealmSyncDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9E7D2A6260169D49081504C2 /* Pods_RealmSyncDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmSyncDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24F0627121211A43003B94C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3C8BA203085023A99D30792 /* Pods_RealmSyncDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24F0626B21211A43003B94C1 = {
+			isa = PBXGroup;
+			children = (
+				24F0627621211A43003B94C1 /* RealmSyncDemo */,
+				24F0627521211A43003B94C1 /* Products */,
+				92D7054698A8814CA379F6E0 /* Pods */,
+				4627789E09D2C5AB285A9FE4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24F0627521211A43003B94C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24F0627421211A43003B94C1 /* RealmSyncDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24F0627621211A43003B94C1 /* RealmSyncDemo */ = {
+			isa = PBXGroup;
+			children = (
+				24F062A52121206E003B94C1 /* AppDelegate */,
+				24F0629B2121206E003B94C1 /* Models */,
+				24F062A22121206E003B94C1 /* ViewControllers */,
+				24F0627D21211A43003B94C1 /* Main.storyboard */,
+				24F0628021211A43003B94C1 /* Assets.xcassets */,
+				24F0628221211A43003B94C1 /* LaunchScreen.storyboard */,
+				24F0628521211A43003B94C1 /* Info.plist */,
+				24F0628621211A43003B94C1 /* main.m */,
+			);
+			path = RealmSyncDemo;
+			sourceTree = "<group>";
+		};
+		24F0629B2121206E003B94C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24F0629C2121206E003B94C1 /* Dish.h */,
+				24F0629D2121206E003B94C1 /* Dish.m */,
+				24F0629E2121206E003B94C1 /* Dog.h */,
+				24F0629F2121206E003B94C1 /* Dog.m */,
+				24F062A02121206E003B94C1 /* Person.h */,
+				24F062A12121206E003B94C1 /* Person.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		24F062A22121206E003B94C1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				24F062B62121217C003B94C1 /* Dish */,
+				24F062B02121217C003B94C1 /* Dog */,
+				24F062B12121217C003B94C1 /* Person */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		24F062A52121206E003B94C1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				24F062A62121206E003B94C1 /* AppDelegate.h */,
+				24F062A72121206E003B94C1 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		24F062B02121217C003B94C1 /* Dog */ = {
+			isa = PBXGroup;
+			children = (
+				24F062BF21212B16003B94C1 /* DogNewViewController.h */,
+				24F062C021212B16003B94C1 /* DogNewViewController.m */,
+				24F062C2212134B7003B94C1 /* DogEditViewController.h */,
+				24F062C3212134B7003B94C1 /* DogEditViewController.m */,
+			);
+			path = Dog;
+			sourceTree = "<group>";
+		};
+		24F062B12121217C003B94C1 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				24F062B22121217C003B94C1 /* PersonEditViewController.h */,
+				24F062B32121217C003B94C1 /* PersonEditViewController.m */,
+				24F062B42121217C003B94C1 /* PersonViewController.h */,
+				24F062B52121217C003B94C1 /* PersonViewController.m */,
+				24F062BC21212202003B94C1 /* PersonNewViewController.h */,
+				24F062BD21212202003B94C1 /* PersonNewViewController.m */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		24F062B62121217C003B94C1 /* Dish */ = {
+			isa = PBXGroup;
+			children = (
+				24F062C521213673003B94C1 /* DishNewViewController.h */,
+				24F062C621213673003B94C1 /* DishNewViewController.m */,
+			);
+			path = Dish;
+			sourceTree = "<group>";
+		};
+		4627789E09D2C5AB285A9FE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24F0629421211B11003B94C1 /* Realm.framework */,
+				9E7D2A6260169D49081504C2 /* Pods_RealmSyncDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92D7054698A8814CA379F6E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6228F3A2092676145D4187A6 /* Pods-RealmSyncDemo.debug.xcconfig */,
+				92C7C918F746A927785E0881 /* Pods-RealmSyncDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24F0627321211A43003B94C1 /* RealmSyncDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F0628A21211A43003B94C1 /* Build configuration list for PBXNativeTarget "RealmSyncDemo" */;
+			buildPhases = (
+				1DF360D71194DFAA9885C1BE /* [CP] Check Pods Manifest.lock */,
+				24F0627021211A43003B94C1 /* Sources */,
+				24F0627121211A43003B94C1 /* Frameworks */,
+				24F0627221211A43003B94C1 /* Resources */,
+				A8967E128CDE66272B612536 /* [CP] Embed Pods Frameworks */,
+				50A06C506212E6102674D2F2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmSyncDemo;
+			productName = RealmSyncDemo;
+			productReference = 24F0627421211A43003B94C1 /* RealmSyncDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24F0626C21211A43003B94C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ZHK;
+				TargetAttributes = {
+					24F0627321211A43003B94C1 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 24F0626F21211A43003B94C1 /* Build configuration list for PBXProject "RealmSyncDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24F0626B21211A43003B94C1;
+			productRefGroup = 24F0627521211A43003B94C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24F0627321211A43003B94C1 /* RealmSyncDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24F0627221211A43003B94C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F0628421211A43003B94C1 /* LaunchScreen.storyboard in Resources */,
+				24F0628121211A43003B94C1 /* Assets.xcassets in Resources */,
+				24F0627F21211A43003B94C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DF360D71194DFAA9885C1BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		50A06C506212E6102674D2F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmSyncDemo/Pods-RealmSyncDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8967E128CDE66272B612536 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmSyncDemo/Pods-RealmSyncDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24F0627021211A43003B94C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F062A92121206E003B94C1 /* Dog.m in Sources */,
+				24F062B72121217C003B94C1 /* PersonEditViewController.m in Sources */,
+				24F062C4212134B7003B94C1 /* DogEditViewController.m in Sources */,
+				24F0628721211A43003B94C1 /* main.m in Sources */,
+				24F062B82121217C003B94C1 /* PersonViewController.m in Sources */,
+				24F062AC2121206E003B94C1 /* AppDelegate.m in Sources */,
+				24F062AA2121206E003B94C1 /* Person.m in Sources */,
+				24F062C721213673003B94C1 /* DishNewViewController.m in Sources */,
+				24F062A82121206E003B94C1 /* Dish.m in Sources */,
+				24F062C121212B16003B94C1 /* DogNewViewController.m in Sources */,
+				24F062BE21212202003B94C1 /* PersonNewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24F0627D21211A43003B94C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24F0627E21211A43003B94C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24F0628221211A43003B94C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24F0628321211A43003B94C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24F0628821211A43003B94C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24F0628921211A43003B94C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24F0628B21211A43003B94C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6228F3A2092676145D4187A6 /* Pods-RealmSyncDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K5P26QDPB;
+				INFOPLIST_FILE = RealmSyncDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZHK.RealmSyncDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24F0628C21211A43003B94C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C7C918F746A927785E0881 /* Pods-RealmSyncDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K5P26QDPB;
+				INFOPLIST_FILE = RealmSyncDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZHK.RealmSyncDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24F0626F21211A43003B94C1 /* Build configuration list for PBXProject "RealmSyncDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F0628821211A43003B94C1 /* Debug */,
+				24F0628921211A43003B94C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F0628A21211A43003B94C1 /* Build configuration list for PBXNativeTarget "RealmSyncDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F0628B21211A43003B94C1 /* Debug */,
+				24F0628C21211A43003B94C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24F0626C21211A43003B94C1 /* Project object */;
+}
