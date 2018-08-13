@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <CloudKit/CloudKit.h>
 
 @interface AppDelegate ()
 

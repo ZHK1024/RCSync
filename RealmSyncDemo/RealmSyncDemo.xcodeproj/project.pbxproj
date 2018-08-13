@@ -21,6 +21,9 @@
 		24F062C121212B16003B94C1 /* DogNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F062C021212B16003B94C1 /* DogNewViewController.m */; };
 		24F062C4212134B7003B94C1 /* DogEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F062C3212134B7003B94C1 /* DogEditViewController.m */; };
 		24F062C721213673003B94C1 /* DishNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F062C621213673003B94C1 /* DishNewViewController.m */; };
+		24F526E621214B54000EA7ED /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F526E521214B54000EA7ED /* CloudKit.framework */; };
+		24F526E921214B90000EA7ED /* SyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F526E821214B90000EA7ED /* SyncEngine.m */; };
+		24F526EC21216504000EA7ED /* RLMObject+CKRecordConvertible.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F526EB21216504000EA7ED /* RLMObject+CKRecordConvertible.m */; };
 		D3C8BA203085023A99D30792 /* Pods_RealmSyncDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7D2A6260169D49081504C2 /* Pods_RealmSyncDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,13 @@
 		24F062C3212134B7003B94C1 /* DogEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogEditViewController.m; sourceTree = "<group>"; };
 		24F062C521213673003B94C1 /* DishNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DishNewViewController.h; sourceTree = "<group>"; };
 		24F062C621213673003B94C1 /* DishNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DishNewViewController.m; sourceTree = "<group>"; };
+		24F526E421214B51000EA7ED /* RealmSyncDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RealmSyncDemo.entitlements; sourceTree = "<group>"; };
+		24F526E521214B54000EA7ED /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		24F526E721214B90000EA7ED /* SyncEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncEngine.h; sourceTree = "<group>"; };
+		24F526E821214B90000EA7ED /* SyncEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyncEngine.m; sourceTree = "<group>"; };
+		24F526EA21216504000EA7ED /* RLMObject+CKRecordConvertible.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLMObject+CKRecordConvertible.h"; sourceTree = "<group>"; };
+		24F526EB21216504000EA7ED /* RLMObject+CKRecordConvertible.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RLMObject+CKRecordConvertible.m"; sourceTree = "<group>"; };
+		24F526ED21216522000EA7ED /* CKRecordConvertible.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKRecordConvertible.h; sourceTree = "<group>"; };
 		6228F3A2092676145D4187A6 /* Pods-RealmSyncDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSyncDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmSyncDemo/Pods-RealmSyncDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		92C7C918F746A927785E0881 /* Pods-RealmSyncDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSyncDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmSyncDemo/Pods-RealmSyncDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9E7D2A6260169D49081504C2 /* Pods_RealmSyncDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmSyncDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C8BA203085023A99D30792 /* Pods_RealmSyncDemo.framework in Frameworks */,
+				24F526E621214B54000EA7ED /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +101,8 @@
 		24F0627621211A43003B94C1 /* RealmSyncDemo */ = {
 			isa = PBXGroup;
 			children = (
+				24F526E421214B51000EA7ED /* RealmSyncDemo.entitlements */,
+				24F526E321214A99000EA7ED /* Sync */,
 				24F062A52121206E003B94C1 /* AppDelegate */,
 				24F0629B2121206E003B94C1 /* Models */,
 				24F062A22121206E003B94C1 /* ViewControllers */,
@@ -167,9 +180,22 @@
 			path = Dish;
 			sourceTree = "<group>";
 		};
+		24F526E321214A99000EA7ED /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+				24F526E721214B90000EA7ED /* SyncEngine.h */,
+				24F526E821214B90000EA7ED /* SyncEngine.m */,
+				24F526ED21216522000EA7ED /* CKRecordConvertible.h */,
+				24F526EA21216504000EA7ED /* RLMObject+CKRecordConvertible.h */,
+				24F526EB21216504000EA7ED /* RLMObject+CKRecordConvertible.m */,
+			);
+			path = Sync;
+			sourceTree = "<group>";
+		};
 		4627789E09D2C5AB285A9FE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24F526E521214B54000EA7ED /* CloudKit.framework */,
 				24F0629421211B11003B94C1 /* Realm.framework */,
 				9E7D2A6260169D49081504C2 /* Pods_RealmSyncDemo.framework */,
 			);
@@ -220,6 +246,17 @@
 					24F0627321211A43003B94C1 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -308,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24F062A92121206E003B94C1 /* Dog.m in Sources */,
+				24F526EC21216504000EA7ED /* RLMObject+CKRecordConvertible.m in Sources */,
 				24F062B72121217C003B94C1 /* PersonEditViewController.m in Sources */,
 				24F062C4212134B7003B94C1 /* DogEditViewController.m in Sources */,
 				24F0628721211A43003B94C1 /* main.m in Sources */,
@@ -317,6 +355,7 @@
 				24F062C721213673003B94C1 /* DishNewViewController.m in Sources */,
 				24F062A82121206E003B94C1 /* Dish.m in Sources */,
 				24F062C121212B16003B94C1 /* DogNewViewController.m in Sources */,
+				24F526E921214B90000EA7ED /* SyncEngine.m in Sources */,
 				24F062BE21212202003B94C1 /* PersonNewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,12 +491,13 @@
 			baseConfigurationReference = 6228F3A2092676145D4187A6 /* Pods-RealmSyncDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RealmSyncDemo/RealmSyncDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K5P26QDPB;
 				INFOPLIST_FILE = RealmSyncDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ZHK.RealmSyncDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weiqian.iCloud.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,12 +508,13 @@
 			baseConfigurationReference = 92C7C918F746A927785E0881 /* Pods-RealmSyncDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RealmSyncDemo/RealmSyncDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K5P26QDPB;
 				INFOPLIST_FILE = RealmSyncDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ZHK.RealmSyncDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weiqian.iCloud.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

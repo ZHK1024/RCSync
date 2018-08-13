@@ -9,6 +9,7 @@
 #import "PersonViewController.h"
 #import "PersonEditViewController.h"
 #import "Person.h"
+#import "RLMObject+CKRecordConvertible.h"
 
 @interface PersonViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -32,6 +33,10 @@
     [super viewWillAppear:animated];
     self.persons = [[Person allObjects] objectsWhere:@"isDelete = 0"];
     [_tableView reloadData];
+//    NSLog(@"type = %@", [Person recordType]);
+    Person *p = [_persons firstObject];
+//    NSLog(@"class = %@", [p class]);
+    p.record;
     
 }
 
