@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240F72A321227F6E009BFADE /* RLMObject+Syncable.m in Sources */ = {isa = PBXBuildFile; fileRef = 240F72A221227F6E009BFADE /* RLMObject+Syncable.m */; };
+		240F72C32122AB3A009BFADE /* RLMObject+CKRecordRecoverable.m in Sources */ = {isa = PBXBuildFile; fileRef = 240F72C22122AB3A009BFADE /* RLMObject+CKRecordRecoverable.m */; };
+		240F72C72122B03B009BFADE /* RLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 240F72C62122B03B009BFADE /* RLObject.m */; };
+		240F72CA2122B055009BFADE /* TTObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 240F72C92122B055009BFADE /* TTObject.m */; };
 		24F0627F21211A43003B94C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F0627D21211A43003B94C1 /* Main.storyboard */; };
 		24F0628121211A43003B94C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F0628021211A43003B94C1 /* Assets.xcassets */; };
 		24F0628421211A43003B94C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F0628221211A43003B94C1 /* LaunchScreen.storyboard */; };
@@ -28,6 +32,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		240F72A121227F6E009BFADE /* RLMObject+Syncable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLMObject+Syncable.h"; sourceTree = "<group>"; };
+		240F72A221227F6E009BFADE /* RLMObject+Syncable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RLMObject+Syncable.m"; sourceTree = "<group>"; };
+		240F72C12122AB3A009BFADE /* RLMObject+CKRecordRecoverable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RLMObject+CKRecordRecoverable.h"; sourceTree = "<group>"; };
+		240F72C22122AB3A009BFADE /* RLMObject+CKRecordRecoverable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RLMObject+CKRecordRecoverable.m"; sourceTree = "<group>"; };
+		240F72C42122AB48009BFADE /* CKRecordRecoverable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKRecordRecoverable.h; sourceTree = "<group>"; };
+		240F72C52122B03B009BFADE /* RLObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLObject.h; sourceTree = "<group>"; };
+		240F72C62122B03B009BFADE /* RLObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLObject.m; sourceTree = "<group>"; };
+		240F72C82122B055009BFADE /* TTObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTObject.h; sourceTree = "<group>"; };
+		240F72C92122B055009BFADE /* TTObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTObject.m; sourceTree = "<group>"; };
 		24F0627421211A43003B94C1 /* RealmSyncDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmSyncDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F0627E21211A43003B94C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24F0628021211A43003B94C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -188,6 +201,15 @@
 				24F526ED21216522000EA7ED /* CKRecordConvertible.h */,
 				24F526EA21216504000EA7ED /* RLMObject+CKRecordConvertible.h */,
 				24F526EB21216504000EA7ED /* RLMObject+CKRecordConvertible.m */,
+				240F72C42122AB48009BFADE /* CKRecordRecoverable.h */,
+				240F72C12122AB3A009BFADE /* RLMObject+CKRecordRecoverable.h */,
+				240F72C22122AB3A009BFADE /* RLMObject+CKRecordRecoverable.m */,
+				240F72A121227F6E009BFADE /* RLMObject+Syncable.h */,
+				240F72A221227F6E009BFADE /* RLMObject+Syncable.m */,
+				240F72C52122B03B009BFADE /* RLObject.h */,
+				240F72C62122B03B009BFADE /* RLObject.m */,
+				240F72C82122B055009BFADE /* TTObject.h */,
+				240F72C92122B055009BFADE /* TTObject.m */,
 			);
 			path = Sync;
 			sourceTree = "<group>";
@@ -347,14 +369,18 @@
 				24F062A92121206E003B94C1 /* Dog.m in Sources */,
 				24F526EC21216504000EA7ED /* RLMObject+CKRecordConvertible.m in Sources */,
 				24F062B72121217C003B94C1 /* PersonEditViewController.m in Sources */,
+				240F72CA2122B055009BFADE /* TTObject.m in Sources */,
 				24F062C4212134B7003B94C1 /* DogEditViewController.m in Sources */,
 				24F0628721211A43003B94C1 /* main.m in Sources */,
 				24F062B82121217C003B94C1 /* PersonViewController.m in Sources */,
 				24F062AC2121206E003B94C1 /* AppDelegate.m in Sources */,
 				24F062AA2121206E003B94C1 /* Person.m in Sources */,
+				240F72C32122AB3A009BFADE /* RLMObject+CKRecordRecoverable.m in Sources */,
 				24F062C721213673003B94C1 /* DishNewViewController.m in Sources */,
+				240F72C72122B03B009BFADE /* RLObject.m in Sources */,
 				24F062A82121206E003B94C1 /* Dish.m in Sources */,
 				24F062C121212B16003B94C1 /* DogNewViewController.m in Sources */,
+				240F72A321227F6E009BFADE /* RLMObject+Syncable.m in Sources */,
 				24F526E921214B90000EA7ED /* SyncEngine.m in Sources */,
 				24F062BE21212202003B94C1 /* PersonNewViewController.m in Sources */,
 			);

@@ -34,12 +34,12 @@
     unsigned int count = 0;
     objc_property_t *list = class_copyPropertyList(self.superclass, &count);
     for (NSInteger i = 0; i < count; i++) {
-        [self record:record value:list[i]];
+        [self record:record property:list[i]];
     }
     return record;
 }
 
-- (void)record:(CKRecord *)record value:(objc_property_t)property {
+- (void)record:(CKRecord *)record property:(objc_property_t)property {
     NSString *name = [NSString stringWithFormat:@"%s", property_getName(property)];
     property_getAttributes(property);
 

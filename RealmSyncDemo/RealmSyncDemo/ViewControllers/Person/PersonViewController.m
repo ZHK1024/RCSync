@@ -10,11 +10,14 @@
 #import "PersonEditViewController.h"
 #import "Person.h"
 #import "RLMObject+CKRecordConvertible.h"
+#import "TTObject.h"
 
 @interface PersonViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) RLMResults *persons;
+@property (nonatomic, strong) RLMNotificationToken *token;
+@property (nonatomic, strong) RLMLinkingObjects *a;
 
 @end
 
@@ -23,6 +26,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    
+//    self.token =
+//    [[RLMRealm defaultRealm] addNotificationBlock:^(RLMNotification  _Nonnull notification, RLMRealm * _Nonnull realm) {
+//        NSLog(@"notification = %@", notification);
+//    }];
+    
+    self.a =
+    [[Person allObjects] addNotificationBlock:^(RLMResults * _Nullable results, RLMCollectionChange * _Nullable change, NSError * _Nullable error) {
+//        NSLog(@"results = %@", results);
+        NSLog(@"deletions      = %@", change.deletions);
+        NSLog(@"insertions     = %@", change.insertions);
+        NSLog(@"modifications  = %@", change.modifications);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,12 +49,9 @@
     [super viewWillAppear:animated];
     self.persons = [[Person allObjects] objectsWhere:@"isDelete = 0"];
     [_tableView reloadData];
-//    NSLog(@"type = %@", [Person recordType]);
-    Person *p = [_persons firstObject];
-//    NSLog(@"class = %@", [p class]);
-    p.record;
-    
 }
+
+
 
 #pragma mark - UITableView dataSource
 
